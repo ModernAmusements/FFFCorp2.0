@@ -1,0 +1,60 @@
+/* MAINTENANCE
+================================================== */
+
+@keyframes blinker {
+  0% {
+      color: inherit;
+  }
+  49% {
+      color: inherit;
+  }
+  50% {
+      color: transparent;
+  }
+  100% {
+      color: transparent;
+  }
+}
+
+/* MAINTENANCE
+================================================== */
+
+#maintenance {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 99999;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-gap: 4rem;
+  align-items: center;
+}
+
+#maintenance h2 {
+  margin: 0 auto;
+  font-size: 200%;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#maintenance ul {
+  padding: 0 5rem 0 0;
+  justify-self: flex-end;
+}
+
+#maintenance img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

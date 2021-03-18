@@ -1,0 +1,51 @@
+/* HEADER
+================================================== */
+
+#wrapper {
+  pointer-events: none;
+}
+
+header {
+  width: 100vw;
+  padding: 1rem 1rem .5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+  pointer-events: all;
+  z-index: 10;
+  text-transform: uppercase;
+  nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-gap: 1rem;
+    justify-content: center;
+    z-index: 10;
+    div {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-gap: .3rem;
+      user-select: none;
+      cursor: pointer;
+      span {
+        .cross {
+          opacity: 0;
+        }
+        .cross:hover {
+          opacity: 1;
+        }
+      }
+    }
+    div.active {
+      pointer-events: none;
+      span .cross {
+        opacity: 1;
+      }
+    }
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
